@@ -1,0 +1,94 @@
+/* Place your CSS styles in this file */
+h1 {
+    text-align: center;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: normal;
+    font-size: 1.3em !important
+}
+
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Roboto", sans-serif
+}
+
+/*body {
+    background-image:url('orionneb.jpg');
+    background-repeat:inherit;
+    background-size:auto;
+    background-attachment:scroll;
+}
+*/
+.p2 {
+    text-indent: 30px;
+}
+
+.edu {
+    color: #000;
+}
+
+a:link {
+    text-emphasis-color: black;
+}
+
+a:hover {
+    color: #3f51b5;
+}
+
+.bg-primary2 {
+    background-color: #333333;
+}
+
+.button {
+    position: relative;
+    background-color: #3f51b5;
+    border: none;
+    font-size: 16px;
+    color: #FFFFFF;
+    padding: 1px;
+    width: 250px;
+    text-align: center;
+    transition-duration: 0.6s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 16px;
+}
+
+.avatar {
+    vertical-align: middle;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.navul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0px;
+    overflow: hidden;
+    background-color: #000;
+}
+
+.navli {
+    float: left;
+    display: inline;
+}
+
+.navli a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navli a:hover {
+    background-color: #333333;
+    color: white;
+}
