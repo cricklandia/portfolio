@@ -33,65 +33,38 @@
         </a>
     </div>
     <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~NAV BAR~~~~~~~~~~~~~~~~~~~~~~~~ -->
-    <nav class="navbar navbar-expand-lg bg-black navbar-dark sticky-top" id="navbar" script="navBarCollapse()">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-                <img src="ppcropbw.jpg" alt="Avatar Logo" class="avatar">
+
+
+
+    <div class="topnav sticky-top">
+        <!-- AVATAR -->
+
+        <a class="active" href="#">Home</a>
+        <div class="topnav-right">
+            <a href="#about">
+                About
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
-                <span class="navbar-toggler-icon">
-                </span>
-            </button>
-            <div class="collapse navbar-collapse" id="collapsibleNavbar">
-                <ul class="navul">
-                    <!-- <li class="navli">
-                        <a class="nav-link active" href="#top">
-                        Home
-                        </a>
-                        </li> -->
-                    <li class="navli">
-                        <!-- how to make this collapsible link also go to # -->
-                        <a href="#about">
-                            About
-                        </a>
-                    </li>
-                    <li class="navli">
-                        <a class="navli" href=#skills>
-                            Skills
-                        </a>
-                    </li>
-                    <li class="navli">
-                        <a href="#edu">
-                            Education
-                        </a>
-                    </li>
-                    <li class="navli">
-                        <a href="#cap">
-                            Capstone
-                        </a>
-                    </li>
-                    <li class="navli">
-                        <a class="nav-link" href="#work">
-                            Work
-                        </a>
-                    </li>
-                    <!-- <li class="navli">
-                        <a class="nav-link" href="#port">
-                        Portfolio
-                        </a>
-                        </li> -->
-                    <!-- <li class="nav-item">
-                        <a class="nav-link disabled" href="#">Disabled</a>
-                        </li> -->
-                </ul>
-                <!-- search form -->
-                <!-- <form class="d-flex my-2 my-lg-0">
+            <a href="#skills">Skills</a>
+
+            <a href="#edu">Education</a>
+            <a href="#cap">Capstone</a>
+            <a href="#work">Work</a>
+
+            <!-- Hamburger -->
+            <!-- <button class="navbar-toggler" type="button" onclick="openNav()">
+    <span  class="navbar-toggler-icon">
+    </span>
+</button> -->
+            <!-- search form -->
+            <!-- <form class="d-flex my-2">
                     <input class="form-control me-sm-2" type="search" placeholder="Search" aria-label="Search">
                     <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
                     </form> -->
-            </div>
         </div>
-    </nav>
+
+    </div>
+
+
     <!-- Page Container -->
     <div class="w3-content w3-margin-top" style="max-width:1200px;">
         <!-- The Grid -->
@@ -331,64 +304,13 @@
                         <br>
                         <br>
                     </div>
+                    <div id="edu">
+                    </div>
                 </div>
-                <br>
-                <!-- End Left Column -->
-            </div>
-            <!-- Right Column -->
-            <div class="w3-twothird" id="about">
-                <!-- ~~~~~~~~~~~~ A B O U T ~~~~~~~~~~~~ -->
-                <div class="w3-container w3-card w3-white w3-margin-bottom">
-                    <h2 class="w3-text-grey w3-padding-16">
-                        <i class="fa fa-male fa-spin fa-fw w3-margin-right w3-xxlarge w3-text-indigo">
-                        </i>
-                        About
-                    </h2>
-                    <p class="p2">
-                        I was born in Alabama to parents from Georgia and Illinois but raised
-                        in Florida from a very young age. After thirteen years in the public school
-                        system, I probably ended up falling into the "band nerd" category, though
-                        at the time I would have liked to think I wasn't as nerdy as the others,
-                        but hindsight is 20/20. Anyway, I continued that theme into college where
-                        I majored in music with my principal instrument being classical guitar.
-                    </p>
-                    <p class="p2">
-                        By graduation time, I was teaching private lessons out of a small independent
-                        music store and continued that until I married my college sweetheart and
-                        realized I needed something more substantial, so I became a state government
-                        worker. This was a path many of us who graduated from Florida State University
-                        took due to living in the state capital where the majority of jobs are
-                        in government. The Florida Department of Education hired me as an IT specialist
-                        on an operations team in the Bureau of Educator Certification. It was my
-                        first job in the professional world, and I enjoyed it, but after four years
-                        there my wife’s father began a life changing battle with cancer which rendered
-                        him partially paralyzed and unable to work.
-                    </p>
-                    <p class="p2">
-                        With my in-laws living over four hundred miles away in South Florida,
-                        we decided to relocate there to help support her family. Since I had already
-                        been in the state government system, I naturally took another state job
-                        which was at the child support office in West Palm Beach. After three years
-                        of being there for my in-laws, my wife and I realized we preferred our
-                        old life in Tallahassee. I was offered my old job back at DOE, so back
-                        to North Florida we went.
-                    </p>
-                    <p class="p2">
-                        It was after the return to Tallahassee that the marriage ended, which
-                        left me without much of a reason to stay in Tallahassee. I had been with
-                        DOE for a combined total of eight years by this point. I had no immediate
-                        family there and not many friends, so it became obvious that a change needed
-                        to occur, so that’s how I ended up back in my birth state. My strong familial
-                        connections in North Alabama along with the area's burgeoning tech industry
-                        made it an obvious place to call home. Since moving to Madison, I have
-                        completed a second bachelor’s degree at Athens State University where I spent over three years
-                        studying programming, problem analysis,
-                        problem-solving, and software engineering.
-                    </p>
-                    <br id="edu">
-                </div>
+
                 <!-- ~~~~~~~~~~~~E D U C A T I O N~~~~~~~~~~~~ -->
                 <div class="w3-container w3-card w3-white w3-margin-bottom">
+                    <br>
                     <h2 class="w3-text-grey w3-padding-16">
                         <i class="fa fa-graduation-cap fa-spin fa-fw w3-margin-right w3-xxlarge w3-text-indigo">
                         </i>
@@ -471,8 +393,7 @@
                                 </a>
                             </b>
                         </h5>
-                        <div id="cap">
-                        </div>
+
                         <p class="edu">
                             Major:
                             <a class="edu"
@@ -488,9 +409,66 @@
                             2000 - 2002
                         </h6>
                         <br>
-                        <br>
+
                     </div>
                 </div>
+                <br>
+                <!-- End Left Column -->
+            </div>
+            <!-- Right Column -->
+            <div class="w3-twothird" id="about">
+                <!-- ~~~~~~~~~~~~ A B O U T ~~~~~~~~~~~~ -->
+                <div class="w3-container w3-card w3-white w3-margin-bottom">
+                    <h2 class="w3-text-grey w3-padding-16">
+                        <i class="fa fa-male fa-spin fa-fw w3-margin-right w3-xxlarge w3-text-indigo">
+                        </i>
+                        About
+                    </h2>
+                    <p class="p2">
+                        I was born in Alabama to parents from Georgia and Illinois but raised
+                        in Florida from a very young age. After thirteen years in the public school
+                        system, I probably ended up falling into the "band nerd" category, though
+                        at the time I would have liked to think I wasn't as nerdy as the others,
+                        but hindsight is 20/20. Anyway, I continued that theme into college where
+                        I majored in music with my principal instrument being classical guitar.
+                    </p>
+                    <p class="p2">
+                        By graduation time, I was teaching private lessons out of a small independent
+                        music store and continued that until I married my college sweetheart and
+                        realized I needed something more substantial, so I became a state government
+                        worker. This was a path many of us who graduated from Florida State University
+                        took due to living in the state capital where the majority of jobs are
+                        in government. The Florida Department of Education hired me as an IT specialist
+                        on an operations team in the Bureau of Educator Certification. It was my
+                        first job in the professional world, and I enjoyed it, but after four years
+                        there my wife’s father began a life changing battle with cancer which rendered
+                        him partially paralyzed and unable to work.
+                    </p>
+                    <p class="p2">
+                        With my in-laws living over four hundred miles away in South Florida,
+                        we decided to relocate there to help support her family. Since I had already
+                        been in the state government system, I naturally took another state job
+                        which was at the child support office in West Palm Beach. After three years
+                        of being there for my in-laws, my wife and I realized we preferred our
+                        old life in Tallahassee. I was offered my old job back at DOE, so back
+                        to North Florida we went.
+                    </p>
+                    <p class="p2">
+                        It was after the return to Tallahassee that the marriage ended, which
+                        left me without much of a reason to stay in Tallahassee. I had been with
+                        DOE for a combined total of eight years by this point. I had no immediate
+                        family there and not many friends, so it became obvious that a change needed
+                        to occur, so that’s how I ended up back in my birth state. My strong familial
+                        connections in North Alabama along with the area's burgeoning tech industry
+                        made it an obvious place to call home. Since moving to Madison, I have
+                        completed a second bachelor’s degree at Athens State University where I spent over three years
+                        studying programming, problem analysis,
+                        problem-solving, and software engineering.
+                    </p>
+                    <br id="cap">
+
+                </div>
+
                 <!-- ~~~~~~~~~~~~ C L A S S R O O M E X P E R I E N C E ~~~~~~~~~~~~ -->
                 <div class="w3-container w3-card w3-white w3-margin-bottom">
                     <h2 class="w3-text-grey w3-padding-16">
@@ -816,13 +794,13 @@
         <br>
         <br>
         <p class="w3-small">
-            Created by Chris Strickland July 2022
+            Created by Chris Strickland July 2022 using Bootstrap 5 and W3.CSS
         </p>
         <!-- <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a> -->
     </footer>
     <script>
         // When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
-        link.onclick = function () {
+        /*link.onclick = function () {
             navBarCollapse()
         };
 
@@ -833,7 +811,17 @@
             } else {
                 return;
             }
+        }*/
+
+        /* Open when someone clicks on the span element */
+        function openNav() {
+            document.getElementById("myNav").style.width = "100%";
         }
+
+        /* Close when someone clicks on the "x" symbol inside the overlay */
+        function closeNav() {
+            document.getElementById("myNav").style.width = "0%";
+        } 
     </script>
 </body>
 

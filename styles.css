@@ -92,3 +92,33 @@ a:hover {
     background-color: #333333;
     color: white;
 }
+/* taken from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_topnav_right */
+.topnav {
+    overflow: hidden;
+    background-color: #000;
+  }
+  
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav a:hover {
+    background-color: #3f51b5;
+    color: white;
+    
+  }
+  
+  .topnav a.active {
+    background-color: #3f51b5;
+    color: white;
+  }
+  
+  .topnav-right {
+    float: right;
+  }
+
