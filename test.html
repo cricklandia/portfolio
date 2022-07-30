@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+
+</style>
+</head>
+<body>
+    <nav class="topnav  navbar-expand-lg bg-black navbar-dark sticky-top" id="navbar">
+        <button onclick="openNav()" class="navbar-toggler topnav-right " type="button"> <!--data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">-->
+                                   <span class="navbar-toggler-icon" >
+                                   </span>
+                               </button> 
+
+
+
+
+
+
+        <div class="container-fluid">
+
+           
+           
+            <!-- <a class="navbar-brand" href="#">
+                <img src="ppcropbw.jpg" alt="Avatar Logo" class="avatar">
+            </a> -->
+           
+      
+                <a  class="one" href="#">Home</a>
+         
+           
+            <div class="collapse navbar-collapse " id="collapsibleNavbar" >
+                
+                <ul class="navul" >
+                    <!-- <li class="navli">
+                        <a class="nav-link active" href="#top">
+                        Home
+                        </a>
+                        </li> -->
+                    <li class="navli">
+                        <!-- how to make this collapsible link also go to # -->
+                        <a href="#about">
+                            About
+                        </a>
+                    </li>
+                    <li class="navli">
+                        <a class="navli" href=#skills>
+                            Skills
+                        </a>
+                    </li>
+                    <li class="navli">
+                        <a href="#edu">
+                            Education
+                        </a>
+                    </li>
+                    <li class="navli">
+                        <a href="#cap">
+                            Capstone
+                        </a>
+                    </li>
+                    <li class="navli">
+                        <a class="nav-link" href="#work">
+                            Work
+                        </a>
+                    </li>
+                    <!-- <li class="navli">
+                        <a class="nav-link" href="#port">
+                        Portfolio
+                        </a>
+                        </li> -->
+                    <!-- <li class="nav-item">
+                        <a class="nav-link disabled" href="#">Disabled</a>
+                        </li> -->
+
+                </ul>
+
+
+                
+                <!-- search form -->
+                <!-- <form class="d-flex my-2 my-lg-0">
+                    <input class="form-control me-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                    </form> -->
+            </div>
+           
+        </div>
+  
+    </nav>
+
+
+<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Clients</a>
+    <a href="#">Contact</a>
+  </div>
+</div>
+
+<h2>Fullscreen Overlay Nav Example</h2>
+<p>Click on the element below to open the fullscreen overlay navigation menu.</p>
+<p>In this example, the navigation menu will slide in, from left to right:</p>
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+
+
+     
+</body>
+</html>

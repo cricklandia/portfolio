@@ -4,98 +4,103 @@ h1 {
     font-family: "Source Sans Pro", sans-serif;
     font-weight: normal;
     font-size: 1.3em !important
-}
-
-html,
-body,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+  }
+  
+  html,
+  body,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     font-family: "Roboto", sans-serif
-}
-
-/*body {
-    background-image:url('orionneb.jpg');
-    background-repeat:inherit;
-    background-size:auto;
-    background-attachment:scroll;
-}
-*/
-.p2 {
+  }
+  
+  /* body {
+      background-image:url('orionneb.jpg');
+      background-repeat:inherit;
+      background-size:auto;
+      background-attachment:scroll;
+  } */
+  
+  .p2 {
     text-indent: 30px;
-}
-
-.edu {
+  }
+  
+  .edu {
     color: #000;
-}
-
-a:link {
+  }
+  
+  a:link {
     text-emphasis-color: black;
-}
-
-a:hover {
+  }
+  
+  a:hover {
     color: #3f51b5;
-}
-
-.bg-primary2 {
+  }
+  
+  .bg-primary2 {
     background-color: #333333;
-}
-
-.button {
+  }
+  
+  .button {
     position: relative;
     background-color: #3f51b5;
     border: none;
     font-size: 16px;
     color: #FFFFFF;
     padding: 1px;
-    width: 250px;
+    width: 200px;
     text-align: center;
     transition-duration: 0.6s;
     text-decoration: none;
     overflow: hidden;
     cursor: pointer;
-    border-radius: 16px;
-}
-
-.avatar {
+    border-radius: 12px;
+  }
+  
+  
+  
+  .avatar {
     vertical-align: middle;
     width: 40px;
     height: 40px;
     border-radius: 50%;
-}
-
-.navul {
+  }
+  
+  .navul {
     list-style-type: none;
     margin: 0;
     padding: 0px;
     overflow: hidden;
     background-color: #000;
-}
-
-.navli {
+  }
+  
+  .navli {
     float: left;
     display: inline;
-}
-
-.navli a {
+  }
+  
+  .navli a {
     display: block;
     color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-}
-
-.navli a:hover {
+  }
+  
+  .navli a:hover {
     background-color: #333333;
     color: white;
-}
-/* taken from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_topnav_right */
-.topnav {
-    overflow: hidden;
+  }
+  
+  .topnav {
+    overflow: auto;
     background-color: #000;
+  
+  
+  
   }
   
   .topnav a {
@@ -105,20 +110,159 @@ a:hover {
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
+    width: 100px;
   }
   
   .topnav a:hover {
     background-color: #3f51b5;
     color: white;
-    
+  
+  
   }
   
-  .topnav a.active {
-    background-color: #3f51b5;
-    color: white;
+  .topnav a:active {
+    background-color: #000;
+    color: #fff;
+  
+  
+  
   }
   
   .topnav-right {
-    float: right;
+    float: right !important;
+    padding: 14px 16px;
+  
+  
   }
-
+  
+  .navbar-toggler {
+    position: bottom !important;
+    height: 50px;
+    border: none;
+    font-size: 16px;
+  
+  
+    text-align: center;
+    transition-duration: 0.6s;
+    text-decoration: none;
+  
+    cursor: pointer;
+    border-radius: 16px;
+  }
+  
+  .vert-line-spacer {
+  
+  
+    border-style: solid;
+    border-width: 1px;
+  
+    border-left: #000;
+    border-bottom: #000;
+    border-top: #000;
+    border-right-color: #333;
+  
+  }
+  
+  .fa-spin {
+    animation-duration: 17s !important;
+  
+    animation-delay: 7s !important;
+  }
+  
+  .w3-animate-fading {
+    animation-duration: 30s !important;
+  
+    animation-delay: 264 !important;
+  }
+  
+  .progress-bar-animated {
+    animation-duration: 2s !important;
+  }
+  
+  /* The Overlay (background) */
+  .overlay {
+    /* Height & width depends on how you want to reveal the overlay (see JS below) */
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    background-color: rgb(0, 0, 0);
+    /* Black fallback color */
+    background-color: rgba(0, 0, 0, 0.9);
+    /* Black w/opacity */
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+    transition: 0.5s;
+    /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+  }
+  
+  /* Position the content inside the overlay */
+  .overlay-content {
+    position: relative;
+    top: 25%;
+    /* 25% from the top */
+    width: 100%;
+    /* 100% width */
+    text-align: center;
+    /* Centered text/links */
+    margin-top: 30px;
+    /* 30px top margin to avoid conflict with the close button on smaller screens */
+  }
+  
+  /* The navigation links inside the overlay */
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    /* Display block instead of inline */
+    transition: 0.3s;
+    /* Transition effects on hover (color) */
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .overlay a:hover,
+  .overlay a:focus {
+    color: #f1f1f1;
+  }
+  
+  /* Position the close button (top right corner) */
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
+  
+  /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+  @media screen and (max-height: 450px) {
+    .overlay a {
+      font-size: 20px
+    }
+  
+    .overlay .closebtn {
+      font-size: 40px;
+      top: 15px;
+      right: 35px;
+    }
+  }
+  
+  /* this overrides bootstrapp css so overlay can cover nav*/
+  .sticky-top {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1 !important
+  }
+  
+  .anchor {
+    display: block;
+    padding-top: 50px;
+    margin-top: -50px;
+  }
+  

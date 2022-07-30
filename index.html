@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
-
-<head>
+  <head>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
@@ -9,99 +8,141 @@
     <!--Bootstrap: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_website_bootstrap5&stacked=h
         -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
-</head>
-<title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js">
+    </script>
+    <script src="scripts.js"></script>
+  </head>
+  <title>
     CS: Portfolio
-</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js">
-</script>
-
-<body class="w3-light-grey">
+  </title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <body class="w3-light-grey">
     <div class="p-5 bg-primary2 text-white text-center">
-        <h1>
-            Christopher M. Strickland
-        </h1>
-        <p>
-            Resume / Portfolio
-        </p>
-        <a href="Chris-Strickland-Resume.pdf" target="_blank">
-            <button class="button">
-                Download PDF Resume
-            </button>
-        </a>
+      <h1>
+        Christopher M. Strickland
+      </h1>
+      <p>
+        Resume / Portfolio
+      </p>
+      <a href="Chris-Strickland-Resume.pdf" target="_blank" type="application/pdf">
+        <button class="button">
+          PDF Resume
+        </button>
+      </a>
     </div>
     <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~NAV BAR~~~~~~~~~~~~~~~~~~~~~~~~ -->
-
-
-
-    <div class="topnav sticky-top">
-        <!-- AVATAR -->
-
-        <a class="active" href="#">Home</a>
-        <div class="topnav-right">
-            <a href="#about">
+    <nav class="topnav  navbar-expand-lg  navbar-dark sticky-top" id="navbar">
+      <button onclick="openNav()" class="navbar-toggler topnav-right " type="button">
+        <!--data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">-->
+        <span class="navbar-toggler-icon">
+        </span>
+      </button>
+      <div class="container-fluid">
+        <!-- <a class="navbar-brand" href="#">
+                <img src="ppcropbw.jpg" alt="Avatar Logo" class="avatar">
+            </a> -->
+        <a class="vert-line-spacer" href="#top">Home</a>
+        <div class="collapse navbar-collapse " id="collapsibleNavbar">
+          <ul class="navul">
+            <!-- <li class="navli">
+                        <a class="nav-link active" href="#top">
+                        Home
+                        </a>
+                        </li> -->
+            <li class="navli">
+              <!-- how to make this collapsible link also go to # -->
+              <a href="#about">
                 About
-            </a>
-            <a href="#skills">Skills</a>
-
-            <a href="#edu">Education</a>
-            <a href="#cap">Capstone</a>
-            <a href="#work">Work</a>
-
-            <!-- Hamburger -->
-            <!-- <button class="navbar-toggler" type="button" onclick="openNav()">
-    <span  class="navbar-toggler-icon">
-    </span>
-</button> -->
-            <!-- search form -->
-            <!-- <form class="d-flex my-2">
+              </a>
+            </li>
+            <li class="navli">
+              <a class="navli" href=#skills>
+                Skills
+              </a>
+            </li>
+            <li class="navli">
+              <a href="#edu">
+                Education
+              </a>
+            </li>
+            <li class="navli">
+              <a href="#cap">
+                Capstone
+              </a>
+            </li>
+            <li class="navli">
+              <a class="nav-link" href="#work">
+                Work
+              </a>
+            </li>
+          </ul>
+          <!-- search form -->
+          <!-- <form class="d-flex my-2 my-lg-0">
                     <input class="form-control me-sm-2" type="search" placeholder="Search" aria-label="Search">
                     <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
                     </form> -->
         </div>
-
+      </div>
+    </nav>
+    <!-- The overlay -->
+    <div id="myNav" class="overlay">
+      <!-- Button to close the overlay navigation -->
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <!-- Overlay content -->
+      <div class="overlay-content" onclick="closeNav()">
+        <a href=#skills>
+          Skills
+        </a>
+        <a href="#edu">
+          Education
+        </a>
+        <a href="#about">
+          About
+        </a>
+        <a href="#cap">
+          Capstone
+        </a>
+        <a class="nav-link" href="#work">
+          Work
+        </a>
+      </div>
     </div>
-
-
     <!-- Page Container -->
     <div class="w3-content w3-margin-top" style="max-width:1200px;">
-        <!-- The Grid -->
-        <div class="w3-row-padding">
-            <!-- Left Column -->
-            <div class="w3-third">
-                <div class="w3-white w3-text-grey w3-card-4">
-                    <div class="w3-display-container">
-                        <img src="ppcrop.jpg" style="width:100%" alt="Avatar">
-                        <div class="w3-display-middle w3-container w3-text-black">
-                        </div>
-                    </div>
-                    <div class="w3-container">
-                        <br>
-                        <h2 style="text-align: center">
-                            Chris Strickland
-                        </h2>
-                        <br>
-                        <div id="skills">
-                        </div>
-                        <p>
-                            <i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-indigo">
-                            </i>
-                            Aspiring Software Developer
-                        </p>
-                        <p>
-                            <i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-indigo">
-                            </i>
-                            Madison, AL, USA
-                        </p>
-                        <p>
-                            <i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-indigo">
-                            </i>
-                            cmstrickland@gmail.com
-                        </p>
-                        <!-- <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-indigo"></i>8505590896</p> -->
-                        <!-- <h2 class="w3-text-grey w3-padding-16" id="skills">
+      <!-- The Grid -->
+      <div class="w3-row-padding">
+        <!-- Left Column -->
+        <div class="w3-third">
+          <div class="w3-white w3-text-grey w3-card-4 w3-margin-bottom">
+            <div class="w3-display-container  w3-hover-grayscale">
+              <img src="ppcrop.jpg" style="width:100%" alt="Avatar">
+              <div class="w3-display-middle w3-container w3-text-black">
+              </div>
+            </div>
+            <div class="w3-container">
+              <br>
+              <h2 style="text-align: center">
+                Chris Strickland
+              </h2>
+              <br>
+              <p>
+                <i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-indigo">
+                </i>
+                Aspiring Software Developer
+              </p>
+              <p>
+                <i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-indigo">
+                </i>
+                Madison, AL, USA
+              </p>
+              <p>
+                <i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-indigo">
+                </i>
+                cmstrickland@gmail.com
+              </p>
+              <!-- <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-indigo"></i>8505590896</p> -->
+              <!-- <h2 class="w3-text-grey w3-padding-16" id="skills">
                             <i class="fa fa-compass fa-spin fa-fw w3-margin-right w3-xxlarge w3-text-indigo">
                             </i>Skills        
                             </i>
@@ -113,716 +154,659 @@
                             </div>
                             </div>
                             </p> -->
-                        <hr>
-                        <p class="w3-large">
-                            <b>
-                                <i class="fa fa-wrench fa-fw w3-margin-right w3-text-indigo">
-                                </i>
-                                Tools
-                            </b>
-                        </p>
-                        <p>
-                            Visual Studio Code
-                        </p>
-                        <div class="w3-light-grey w3-round-xlarge w3-small">
-                            <div class="w3-container w3-center w3-round-xlarge w3-indigo progress-bar progress-bar-striped progress-bar-animated"
-                                style="width:95%">
-                                95%
-                            </div>
-                        </div>
-                        <br>
-                        <p>
-                            Xcode
-                        </p>
-                        <div class="w3-light-grey w3-round-xlarge w3-small">
-                            <div class="w3-container w3-center w3-round-xlarge w3-indigo progress-bar progress-bar-striped progress-bar-animated"
-                                style="width:87%">
-                                87%
-                            </div>
-                        </div>
-                        <br>
-                        <p>
-                            Docker
-                        </p>
-                        <div class="w3-light-grey w3-round-xlarge w3-small">
-                            <div class="w3-container w3-center w3-round-xlarge w3-indigo progress-bar progress-bar-striped progress-bar-animated"
-                                style="width:51%">
-                                51%
-                            </div>
-                        </div>
-                        <br>
-                        <p>
-                            Github
-                        </p>
-                        <div class="w3-light-grey w3-round-xlarge w3-small">
-                            <div class="w3-container w3-center w3-round-xlarge w3-indigo progress-bar progress-bar-striped progress-bar-animated"
-                                style="width:82%">
-                                82%
-                            </div>
-                        </div>
-                        <br>
-                        <p>
-                            phpMyAdmin
-                        </p>
-                        <div class="w3-light-grey w3-round-xlarge w3-small">
-                            <div class="w3-container w3-center w3-round-xlarge w3-indigo progress-bar progress-bar-striped progress-bar-animated"
-                                style="width:65%">
-                                65%
-                            </div>
-                        </div>
-                        <br>
-                        <hr>
-                        <!-- ~~~~~~~~~~~~ FRONT END LANGUAGES ~~~~~~~~~~~~ -->
-                        <br>
-                        <p class="w3-large">
-                            <b>
-                                <i class="fa fa-television  fa-fw w3-margin-right w3-text-indigo">
-                                </i>
-                                Front End Languages
-                            </b>
-                        </p>
-                        <p>
-                            Vue
-                        </p>
-                        <div class="w3-light-grey w3-round-xlarge w3-small">
-                            <div class="w3-container w3-center w3-round-xlarge w3-indigo progress-bar progress-bar-striped progress-bar-animated"
-                                style="width:88%">
-                                88%
-                            </div>
-                        </div>
-                        <br>
-                        <p>
-                            JavaScript
-                        </p>
-                        <div class="w3-light-grey w3-round-xlarge w3-small">
-                            <div class="w3-container w3-center w3-round-xlarge w3-indigo progress-bar progress-bar-striped progress-bar-animated"
-                                style="width:80%">
-                                80%
-                            </div>
-                        </div>
-                        <br>
-                        <p>
-                            HTML
-                        </p>
-                        <div class="w3-light-grey w3-round-xlarge w3-small">
-                            <div class="w3-container w3-center w3-round-xlarge w3-indigo progress-bar progress-bar-striped progress-bar-animated"
-                                style="width:86%">
-                                86%
-                            </div>
-                        </div>
-                        <br>
-                        <p>
-                            CSS
-                        </p>
-                        <div class="w3-light-grey w3-round-xlarge w3-small">
-                            <div class="w3-container w3-center w3-round-xlarge w3-indigo progress-bar progress-bar-striped progress-bar-animated"
-                                style="width:82%">
-                                82%
-                            </div>
-                        </div>
-                        <br>
-                        <p>
-                            SwiftUI
-                        </p>
-                        <div class="w3-light-grey w3-round-xlarge w3-small">
-                            <div class="w3-container w3-center w3-round-xlarge w3-indigo progress-bar progress-bar-striped progress-bar-animated"
-                                style="width:75%">
-                                75%
-                            </div>
-                        </div>
-                        <br>
-                        <p>
-                            React
-                        </p>
-                        <div class="w3-light-grey w3-round-xlarge w3-small">
-                            <div class="w3-container w3-center w3-round-xlarge w3-indigo progress-bar progress-bar-striped progress-bar-animated"
-                                style="width:66%">
-                                66%
-                            </div>
-                        </div>
-                        <br>
-                        <p>
-                            Angular
-                        </p>
-                        <div class="w3-light-grey w3-round-xlarge w3-small">
-                            <div class="w3-container w3-center w3-round-xlarge w3-indigo progress-bar progress-bar-striped progress-bar-animated"
-                                style="width:60%">
-                                60%
-                            </div>
-                        </div>
-                        <br>
-
-                        <hr>
-                        <br>
-                        <!-- ~~~~~~~~~~~~ BACKEND LANGUAGES ~~~~~~~~~~~~ -->
-                        <p class="w3-large">
-                            <b>
-                                <i class="fa fa-database fa-fw w3-margin-right w3-text-indigo">
-                                </i>
-                                Back End Languages
-                            </b>
-                        </p>
-                        <p>
-                            C++
-                        </p>
-                        <div class="w3-light-grey w3-round-xlarge w3-small">
-                            <div class="w3-container w3-center w3-round-xlarge w3-indigo progress-bar progress-bar-striped progress-bar-animated"
-                                style="width:96%">
-                                96%
-                            </div>
-                        </div>
-                        <br>
-                        <p>
-                            Python
-                        </p>
-                        <div class="w3-light-grey w3-round-xlarge w3-small">
-                            <div class="w3-container w3-center w3-round-xlarge w3-indigo progress-bar progress-bar-striped progress-bar-animated"
-                                style="width:72%">
-                                72%
-                            </div>
-                        </div>
-                        <br>
-                        <p>
-                            PHP
-                        </p>
-                        <div class="w3-light-grey w3-round-xlarge w3-small">
-                            <div class="w3-container w3-center w3-round-xlarge w3-indigo progress-bar progress-bar-striped progress-bar-animated"
-                                style="width:65%">
-                                65%
-                            </div>
-                        </div>
-                        <br>
-                        <p>
-                            Django
-                        </p>
-                        <div class="w3-light-grey w3-round-xlarge w3-small">
-                            <div class="w3-container w3-center w3-round-xlarge w3-indigo progress-bar progress-bar-striped progress-bar-animated"
-                                style="width:70%">
-                                70%
-                            </div>
-                        </div>
-                        <br>
-                        <br>
-                    </div>
-                    <div id="edu">
-                    </div>
+              <a class="anchor" id="skills"></a>
+              <hr>
+              <p class="w3-large">
+                <b>
+                  <i class="fa fa-wrench fa-fw w3-margin-right w3-text-indigo">
+                  </i>
+                  Tools
+                </b>
+              </p>
+              <p>
+                Visual Studio Code
+              </p>
+              <div class="w3-light-grey w3-round-xlarge w3-small">
+                <div class="w3-container w3-center w3-round-xlarge w3-indigo progress-bar progress-bar-striped progress-bar-animated" style="width:95%">
+                  95%
                 </div>
-
-                <!-- ~~~~~~~~~~~~E D U C A T I O N~~~~~~~~~~~~ -->
-                <div class="w3-container w3-card w3-white w3-margin-bottom">
-                    <br>
-                    <h2 class="w3-text-grey w3-padding-16">
-                        <i class="fa fa-graduation-cap fa-spin fa-fw w3-margin-right w3-xxlarge w3-text-indigo">
-                        </i>
-                        Education
-                    </h2>
-                    <div class="w3-container">
-                        <h5 class="w3-opacity">
-                            <b>
-                                B.S.
-                                <a class="edu" href="https://www.athens.edu/" target="_blank">
-                                    Athens State University
-                                </a>
-                            </b>
-                        </h5>
-                        <p>
-                            Major:
-                            <a class="edu" href="https://www.athens.edu/programs/information-technology/"
-                                target="_blank">
-                                Information Technology
-                            </a>
-                            <br>
-                            Minor:
-                            <a class="edu"
-                                href="https://www.athensedu.org/catalogs/2022-23/Section-5-Minors.pdf#page=4>"
-                                target="_blank">
-                                Application Design
-                            </a>
-                        </p>
-                        <h6 class="w3-text-indigo">
-                            <i class="fa fa-calendar fa-fw w3-margin-right">
-                            </i>
-                            2019 - 2022
-                        </h6>
-                        <p>
-                            <a class="edu" href="Strickland-AcademicTransciptR.pdf" target="_blank">
-                                PDF Transcript
-                            </a>
-                        <p>
-                            <hr>
-                    </div>
-                    <div class="w3-container">
-                        <h5 class="w3-opacity">
-                            <b>
-                                B.A.
-                                <a class="edu" href="https://www.fsu.edu/" target="_blank">
-                                    Florida State University
-                                </a>
-                            </b>
-                        </h5>
-                        <p>
-                            Major:
-                            <a class="edu" href="https://music.fsu.edu/liberal-arts-ba-and-ma-option" target="_blank">
-                                Music
-                            </a>
-                            <br>
-                            Minor:
-                            <a class="edu" href="https://philosophy.fsu.edu/undergraduate-study/minor-requirements"
-                                target="_blank">
-                                Philosophy
-                            </a>
-                        </p>
-                        <h6 class="w3-text-indigo">
-                            <i class="fa fa-calendar fa-fw w3-margin-right">
-                            </i>
-                            2003 - 2005
-                        </h6>
-                        <p>
-                            <a class="edu" href="StricklandFSUTranR.pdf" target="_blank">
-                                PDF Transcript
-                            </a>
-                        <p>
-                            <hr>
-                    </div>
-                    <div class="w3-container">
-                        <h5 class="w3-opacity">
-                            <b>
-                                A.A.
-                                <a class="edu" href="https://www.pensacolastate.edu/" target="_blank">
-                                    Pensacola State College
-                                </a>
-                            </b>
-                        </h5>
-
-                        <p class="edu">
-                            Major:
-                            <a class="edu"
-                                href="https://pensacolastate.smartcatalogiq.com/en/2015-2016/Catalog/Academic-Programs/Associate-in-Arts-Program/Associate-in-Arts-Programs-of-Study/General-Studies-Liberal-Arts-Associate-in-Arts-GEN-AA"
-                                target="_blank">
-                                General Studies (Liberal Arts)
-                            </a>
-                            <br>
-                        </p>
-                        <h6 class="w3-text-indigo">
-                            <i class="fa fa-calendar fa-fw w3-margin-right">
-                            </i>
-                            2000 - 2002
-                        </h6>
-                        <br>
-
-                    </div>
+              </div>
+              <br>
+              <p>
+                Xcode
+              </p>
+              <div class="w3-light-grey w3-round-xlarge w3-small">
+                <div class="w3-container w3-center w3-round-xlarge w3-indigo progress-bar progress-bar-striped progress-bar-animated" style="width:87%">
+                  87%
                 </div>
+              </div>
+              <br>
+              <p>
+                Docker
+              </p>
+              <div class="w3-light-grey w3-round-xlarge w3-small">
+                <div class="w3-container w3-center w3-round-xlarge w3-indigo progress-bar progress-bar-striped progress-bar-animated" style="width:51%">
+                  51%
+                </div>
+              </div>
+              <br>
+              <p>
+                Github
+              </p>
+              <div class="w3-light-grey w3-round-xlarge w3-small">
+                <div class="w3-container w3-center w3-round-xlarge w3-indigo progress-bar progress-bar-striped progress-bar-animated" style="width:82%">
+                  82%
+                </div>
+              </div>
+              <br>
+              <p>
+                phpMyAdmin
+              </p>
+              <div class="w3-light-grey w3-round-xlarge w3-small">
+                <div class="w3-container w3-center w3-round-xlarge w3-indigo progress-bar progress-bar-striped progress-bar-animated" style="width:65%">
+                  65%
+                </div>
+              </div>
+              <br>
+              <hr>
+              <!-- ~~~~~~~~~~~~ FRONT END LANGUAGES ~~~~~~~~~~~~ -->
+              <br>
+              <p class="w3-large">
+                <b>
+                  <i class="fa fa-television  fa-fw w3-margin-right w3-text-indigo">
+                  </i>
+                  Front End Languages
+                </b>
+              </p>
+              <p>
+                Vue
+              </p>
+              <div class="w3-light-grey w3-round-xlarge w3-small">
+                <div class="w3-container w3-center w3-round-xlarge w3-indigo progress-bar progress-bar-striped progress-bar-animated" style="width:88%">
+                  88%
+                </div>
+              </div>
+              <br>
+              <p>
+                JavaScript
+              </p>
+              <div class="w3-light-grey w3-round-xlarge w3-small">
+                <div class="w3-container w3-center w3-round-xlarge w3-indigo progress-bar progress-bar-striped progress-bar-animated" style="width:80%">
+                  80%
+                </div>
+              </div>
+              <br>
+              <p>
+                HTML
+              </p>
+              <div class="w3-light-grey w3-round-xlarge w3-small">
+                <div class="w3-container w3-center w3-round-xlarge w3-indigo progress-bar progress-bar-striped progress-bar-animated" style="width:86%">
+                  86%
+                </div>
+              </div>
+              <br>
+              <p>
+                CSS
+              </p>
+              <div class="w3-light-grey w3-round-xlarge w3-small">
+                <div class="w3-container w3-center w3-round-xlarge w3-indigo progress-bar progress-bar-striped progress-bar-animated" style="width:82%">
+                  82%
+                </div>
+              </div>
+              <br>
+              <p>
+                SwiftUI
+              </p>
+              <div class="w3-light-grey w3-round-xlarge w3-small">
+                <div class="w3-container w3-center w3-round-xlarge w3-indigo progress-bar progress-bar-striped progress-bar-animated" style="width:75%">
+                  75%
+                </div>
+              </div>
+              <br>
+              <p>
+                React
+              </p>
+              <div class="w3-light-grey w3-round-xlarge w3-small">
+                <div class="w3-container w3-center w3-round-xlarge w3-indigo progress-bar progress-bar-striped progress-bar-animated" style="width:66%">
+                  66%
+                </div>
+              </div>
+              <br>
+              <p>
+                Angular
+              </p>
+              <div class="w3-light-grey w3-round-xlarge w3-small">
+                <div class="w3-container w3-center w3-round-xlarge w3-indigo progress-bar progress-bar-striped progress-bar-animated" style="width:60%">
+                  60%
+                </div>
+              </div>
+              <br>
+              <hr>
+              <br>
+              <!-- ~~~~~~~~~~~~ BACKEND LANGUAGES ~~~~~~~~~~~~ -->
+              <p class="w3-large">
+                <b>
+                  <i class="fa fa-database fa-fw w3-margin-right w3-text-indigo">
+                  </i>
+                  Back End Languages
+                </b>
+              </p>
+              <p>
+                C++
+              </p>
+              <div class="w3-light-grey w3-round-xlarge w3-small">
+                <div class="w3-container w3-center w3-round-xlarge w3-indigo progress-bar progress-bar-striped progress-bar-animated" style="width:96%">
+                  96%
+                </div>
+              </div>
+              <br>
+              <p>
+                Python
+              </p>
+              <div class="w3-light-grey w3-round-xlarge w3-small">
+                <div class="w3-container w3-center w3-round-xlarge w3-indigo progress-bar progress-bar-striped progress-bar-animated" style="width:72%">
+                  72%
+                </div>
+              </div>
+              <br>
+              <p>
+                PHP
+              </p>
+              <div class="w3-light-grey w3-round-xlarge w3-small">
+                <div class="w3-container w3-center w3-round-xlarge w3-indigo progress-bar progress-bar-striped progress-bar-animated" style="width:65%">
+                  65%
+                </div>
+              </div>
+              <br>
+              <p>
+                Django
+              </p>
+              <div class="w3-light-grey w3-round-xlarge w3-small">
+                <div class="w3-container w3-center w3-round-xlarge w3-indigo progress-bar progress-bar-striped progress-bar-animated" style="width:70%">
+                  70%
+                </div>
+              </div>
+              <br>
+              <br>
+            </div>
+          </div>
+          <!-- ~~~~~~~~~~~~E D U C A T I O N~~~~~~~~~~~~ -->
+          <div class="w3-container w3-card w3-white w3-margin-bottom">
+            <a class="anchor" id="edu"></a>
+            <h2 class="w3-text-grey w3-padding-16">
+              <i class="fa fa-graduation-cap fa-spin fa-fw w3-margin-right w3-xxlarge w3-text-indigo">
+              </i>
+              Education
+            </h2>
+            <div class="w3-container">
+              <h5 class="w3-opacity">
+                <b>
+                  B.S.
+                  <a class="edu" href="https://www.athens.edu/" target="_blank">
+                    Athens State University
+                  </a>
+                </b>
+              </h5>
+              <p>
+                Major:
+                <a class="edu" href="https://www.athens.edu/programs/information-technology/" target="_blank">
+                  Information Technology
+                </a>
                 <br>
-                <!-- End Left Column -->
+                Minor:
+                <a class="edu" href="https://www.athensedu.org/catalogs/2022-23/Section-5-Minors.pdf#page=4>" target="_blank">
+                  Application Design
+                </a>
+              </p>
+              <h6 class="w3-text-indigo">
+                <i class="fa fa-calendar fa-fw w3-margin-right">
+                </i>
+                2019 - 2022
+              </h6>
+              <p>
+                <a class="edu" href="Strickland-AcademicTransciptR.pdf" target="_blank" type="application/pdf">
+                  PDF Transcript
+                </a>
+                <p>
+                  <hr>
             </div>
-            <!-- Right Column -->
-            <div class="w3-twothird" id="about">
-                <!-- ~~~~~~~~~~~~ A B O U T ~~~~~~~~~~~~ -->
-                <div class="w3-container w3-card w3-white w3-margin-bottom">
-                    <h2 class="w3-text-grey w3-padding-16">
-                        <i class="fa fa-male fa-spin fa-fw w3-margin-right w3-xxlarge w3-text-indigo">
-                        </i>
-                        About
-                    </h2>
-                    <p class="p2">
-                        I was born in Alabama to parents from Georgia and Illinois but raised
-                        in Florida from a very young age. After thirteen years in the public school
-                        system, I probably ended up falling into the "band nerd" category, though
-                        at the time I would have liked to think I wasn't as nerdy as the others,
-                        but hindsight is 20/20. Anyway, I continued that theme into college where
-                        I majored in music with my principal instrument being classical guitar.
-                    </p>
-                    <p class="p2">
-                        By graduation time, I was teaching private lessons out of a small independent
-                        music store and continued that until I married my college sweetheart and
-                        realized I needed something more substantial, so I became a state government
-                        worker. This was a path many of us who graduated from Florida State University
-                        took due to living in the state capital where the majority of jobs are
-                        in government. The Florida Department of Education hired me as an IT specialist
-                        on an operations team in the Bureau of Educator Certification. It was my
-                        first job in the professional world, and I enjoyed it, but after four years
-                        there my wife’s father began a life changing battle with cancer which rendered
-                        him partially paralyzed and unable to work.
-                    </p>
-                    <p class="p2">
-                        With my in-laws living over four hundred miles away in South Florida,
-                        we decided to relocate there to help support her family. Since I had already
-                        been in the state government system, I naturally took another state job
-                        which was at the child support office in West Palm Beach. After three years
-                        of being there for my in-laws, my wife and I realized we preferred our
-                        old life in Tallahassee. I was offered my old job back at DOE, so back
-                        to North Florida we went.
-                    </p>
-                    <p class="p2">
-                        It was after the return to Tallahassee that the marriage ended, which
-                        left me without much of a reason to stay in Tallahassee. I had been with
-                        DOE for a combined total of eight years by this point. I had no immediate
-                        family there and not many friends, so it became obvious that a change needed
-                        to occur, so that’s how I ended up back in my birth state. My strong familial
-                        connections in North Alabama along with the area's burgeoning tech industry
-                        made it an obvious place to call home. Since moving to Madison, I have
-                        completed a second bachelor’s degree at Athens State University where I spent over three years
-                        studying programming, problem analysis,
-                        problem-solving, and software engineering.
-                    </p>
-                    <br id="cap">
-
-                </div>
-
-                <!-- ~~~~~~~~~~~~ C L A S S R O O M E X P E R I E N C E ~~~~~~~~~~~~ -->
-                <div class="w3-container w3-card w3-white w3-margin-bottom">
-                    <h2 class="w3-text-grey w3-padding-16">
-                        <i class="fa fa-cube fa-spin fa-fw w3-margin-right w3-xxlarge w3-text-indigo">
-                        </i>
-                        Classroom Experience
-                    </h2>
-                    <p class="p2">
-                        For my software engineering capstone project at Athens State in Spring
-                        2022, I developed an application for our customer on top of a preexisting
-                        back end which was developed by the Fall '21 team. My team was responsible
-                        for designing, implementing, and testing the front end requirements given
-                        to us by the customer. With diligent communication with the client and
-                        my team, we were able to develop a reliable product which pushed, posted,
-                        rendered, and updated data between various user views and established connections
-                        between the front and back end. The front end aspects that I worked on
-                        were written in Vue.js and plain JavaScript. Other aspects of the project
-                        included a Docker container environment consisting of NGINX, Django, and
-                        Vue servers. Python was used for terminal commands and scripts to manage
-                        the back end as well as to define data tables within the Django REST API.
-                        Version control was all done through GitHub using terminal commands and
-                        the Visual Studio Code integrated source control.
-                    </p>
-                    <p>
-                        Other academic projects included:
-                    </p>
-                    <ul>
-                        <li>
-                            Website redesign for local non-profit literacy organization using Wordpress
-                        </li>
-                        <li>
-                            Used PHP, MySQL, HTML, CSS, and JS for web development
-                        </li>
-                        <div id="work">
-                        </div>
-                        <li>
-                            Designed and developed database using MySQL Workbench and phpMyAdmin
-                        </li>
-                        <li>
-                            Mobile iOS app dev using Xcode and Swift
-                        </li>
-                        <li>
-                            C++ programs and data structures
-                        </li>
-                    </ul>
-                    <br>
-                </div>
-                <!-- ~~~~~~~~~~~~ W O R K ~~~~~~~~~~~~ -->
-                <div class="w3-container w3-card w3-white w3-margin-bottom">
-                    <h2 class="w3-text-grey w3-padding-16">
-                        <i class="fa fa-suitcase fa-spin fa-fw w3-margin-right w3-xxlarge w3-text-indigo">
-                        </i>
-                        Work Experience
-                    </h2>
-                    <div class="w3-container">
-                        <h4 class="w3-opacity">
-                            <b>
-                                Driver / Pizza Hut
-                            </b>
-                        </h4>
-                        <h6 class="w3-text-indigo">
-                            <i class="fa fa-map-marker fa-fw w3-margin-right">
-                            </i>
-                            Madison, Alabama
-                        </h6>
-                        <h6 class="w3-text-indigo">
-                            <i class="fa fa-calendar fa-fw w3-margin-right">
-                            </i>
-                            2019 - 2022
-                            <!--span class="w3-tag w3-indigo w3-round">Current</span-->
-                        </h6>
-                        <p class="p2">
-                        </p>
-                        This was the first job I took when I moved to Alabama and it turned out
-                        to be ideal for getting me through school at Athens State. I originally
-                        didn't think I would stay as long as I did but the flexibility in scheduling
-                        and generous customers in Madison made it worth sticking around while I
-                        looked for my first software engineering position after graduating.
-                        </p>
-                        <hr>
-                    </div>
-                    <div class="w3-container">
-                        <h4 class="w3-opacity">
-                            <b>
-                                IT Program Specialist II / Florida Department of Education
-                            </b>
-                        </h4>
-                        <h6 class="w3-text-indigo">
-                            <i class="fa fa-map-marker fa-fw w3-margin-right">
-                            </i>
-                            Tallahassee, Florida
-                        </h6>
-                        <h6 class="w3-text-indigo">
-                            <i class="fa fa-calendar fa-fw w3-margin-right">
-                            </i>
-                            2014 - 2018
-                        </h6>
-                        <p class="p2">
-                        </p>
-                        After three years of absence, I returned to my previous position to find
-                        that the department's educator certification technology systems were in
-                        the process of being redesigned. Because of this, my responsibilities involved
-                        working as a liason to the contracted application developers. It was during
-                        this period that I became interested in programming as a career. Working
-                        closely with our app dev team I became familiar with Agile methodology
-                        and the software development lifecycle as it pertained to my department's
-                        project.
-                        </p>
-                        <ul>
-                            <li>
-                                Government side liaison to a contracted app dev team
-                            </li>
-                            <li>
-                                Developed user stories and testing documentation in Sharepoint
-                            </li>
-                            <li>
-                                Provided technical assistance to all internal employees and external stakeholders
-                            </li>
-                            <li>
-                                Managed user accounts, priviliges, and passwords with Active Directory
-                            </li>
-                            <li>
-                                Participated in extensive project to redesign Florida’s certification
-                                system
-                            </li>
-                            <li>
-                                Assessed and resolved urgent system and technical issues
-                            </li>
-                            <li>
-                                Maintained production statistics and system status reports
-                            </li>
-                            <li>
-                                Used Remedy ticketing system manage helpdesk requests
-                            </li>
-                            <li>
-                                Worked with contracted application developers to analyze and adopt existing
-                                business processes in the new system
-                            </li>
-                            <li>
-                                Followed property custodian protocol for inventory addition, deletion,
-                                transfer, and surplus of computers and other state property
-                            </li>
-                        </ul>
-                        <hr>
-                    </div>
-                    <div class="w3-container">
-                        <h4 class="w3-opacity">
-                            <b>
-                                Revenue Specialist II / Florida Department of Revenue
-                            </b>
-                        </h4>
-                        <h6 class="w3-text-indigo">
-                            <i class="fa fa-map-marker fa-fw w3-margin-right">
-                            </i>
-                            West Palm Beach, Florida
-                        </h6>
-                        <h6 class="w3-text-indigo">
-                            <i class="fa fa-calendar fa-fw w3-margin-right">
-                            </i>
-                            2012 - 2014
-                        </h6>
-                        <p class="p2">
-                            At this point, I was a state worker outside the state capital so I was
-                            given a small pool of options for employment if I was going to continue
-                            my public sector trajectory. Luckily I landed what might end up being the
-                            most bizarre job of my career, which was at the Child Support Enforcement
-                            office in West Palm Beach. The population diversity of South Florida is
-                            unlike anywhere I had ever lived, and the cast of characters I had the
-                            pleasure of interviewing (with glass separating us) taught me more about
-                            the human condition than anything else up until this point. More often
-                            than interviewing clients in an interviewing room, I was seated at my desk,
-                            tasked with compiling financial and employment data and creating in house
-                            child support orders. These were known as administrative orders as opposed
-                            to judicial orders created by the courts.
-                        </p>
-                        <ul>
-                            <li>
-                                Piloted a cost reducing directive to administer DNA testing by state employees
-                                rather than contracting through vendor
-                            </li>
-                            <li>
-                                Interpreted and processed court orders and other legal documents
-                            </li>
-                            <li>
-                                Abided by complex state guidelines to establish child support orders using
-                                financial data provided by the client combined with research utilizing
-                                DOR resources
-                            </li>
-                            <li>
-                                Coordinated and streamlined process to minimize customer wait times and
-                                maximize accuracy of DNA collections process
-                            </li>
-                            <li>
-                                Utilized a task based CRM software based work environment, similar to
-                                Jira in the tech world
-                            </li>
-                            <li>
-                                Educated the client regarding the steps to obtain an order
-                            </li>
-                            <li>
-                                Coordinating genetic testing appointments and lab analysis with contracted
-                                state vendors and legal service providers
-                            </li>
-                            <li>
-                                Knowledge of state law and policy regarding paternity and child support
-                            </li>
-                        </ul>
-                        <hr>
-                    </div>
-                    <div class="w3-container">
-                        <h4 class="w3-opacity">
-                            <b>
-                                IT Program Specialist II / Florida Department of Education
-                            </b>
-                        </h4>
-                        <h6 class="w3-text-indigo">
-                            <i class="fa fa-map-marker fa-fw w3-margin-right">
-                            </i>
-                            Tallahassee, Florida
-                        </h6>
-                        <h6 class="w3-text-indigo">
-                            <i class="fa fa-calendar fa-fw w3-margin-right">
-                            </i>
-                            2007 - 2011
-                        </h6>
-                        <p class="p2">
-                        </p>
-                        My first time working in the "professional world" was in FLDOE's Bureau
-                        of Educator Certification. At that time, men in the bureau were required
-                        to wear ties, so I think that's what makes me say "professional". On my
-                        first day my supervisor gave me the task of troubleshooting an inexpensive
-                        HP inkjet printer. After spending hours on hold with HP customer service,
-                        we ended up just boxing it up and shipping it back to be replaced. That
-                        headache was how I was introduced to the next ten years of being a state
-                        employee. But despite the interesting first day, the job did give me invaluable
-                        lessons and experience as shown below.
-                        </p>
-                        <ul>
-                            <li>
-                                IT support for internal and external stakeholders
-                            </li>
-                            <li>
-                                Provided technical assistance to all internal employees and external stakeholders
-                            </li>
-                            <li>
-                                Assessed and resolved urgent system and technical issues
-                            </li>
-                            <li>
-                                Maintained production statistics and system status reports
-                            </li>
-                            <li>
-                                Technical assistance and troubleshooting of all office PCs, equipment
-                                and software utilized by a bureau staff of 60 employees in addition to
-                                managing the BEC technical help e-mail inbox which served all school districts
-                                in the state
-                            </li>
-                            <li>
-                                Preparing reports on bureau production statistics and technology systems
-                                status
-                            </li>
-                            <li>
-                                Investigating, analyzing, and making resolution recommendations for BEC
-                                system issues
-                            </li>
-                            <li>
-                                Maintaining all equipment and supply inventory records including: maintenance
-                                contracts (renewing and evaluating cost effectiveness), office supplies,
-                                and following protocol for property addition, deletion, transfer, and surplus
-                            </li>
-                            <li>
-                                Discovered thousands of dollars in savings by upgrading outdated scanning
-                                equipment, made recommendation on purchase which eliminated wasteful spending
-                                on maintenance contracts
-                            </li>
-                        </ul>
-                        <hr>
-                    </div>
-                    <div class="w3-container">
-                        <h4 class="w3-opacity">
-                            <b>
-                                Instructor / Music Center
-                            </b>
-                        </h4>
-                        <h6 class="w3-text-indigo">
-                            <i class="fa fa-map-marker fa-fw w3-margin-right">
-                            </i>
-                            Tallahassee, Florida
-                        </h6>
-                        <h6 class="w3-text-indigo">
-                            <i class="fa fa-calendar fa-fw w3-margin-right">
-                            </i>
-                            2005 - 2007
-                        </h6>
-                        <p class="p2">
-                        </p>
-                        While still in college, a small independent music store in downtown Tallahassee
-                        hired me to teach guitar lessons. On my days not teaching I would open
-                        and close the store, work the counter, and assist customers with questions
-                        about merchandise.
-                        </p>
-                        <div class="p2">
-                        </div>
-                    </div>
-                    <br>
-                </div>
-                <!-- End Right Column -->
+            <div class="w3-container">
+              <h5 class="w3-opacity">
+                <b>
+                  B.A.
+                  <a class="edu" href="https://www.fsu.edu/" target="_blank">
+                    Florida State University
+                  </a>
+                </b>
+              </h5>
+              <p>
+                Major:
+                <a class="edu" href="https://music.fsu.edu/liberal-arts-ba-and-ma-option" target="_blank">
+                  Music
+                </a>
+                <br>
+                Minor:
+                <a class="edu" href="https://philosophy.fsu.edu/undergraduate-study/minor-requirements" target="_blank">
+                  Philosophy
+                </a>
+              </p>
+              <h6 class="w3-text-indigo">
+                <i class="fa fa-calendar fa-fw w3-margin-right">
+                </i>
+                2003 - 2005
+              </h6>
+              <p>
+                <a class="edu" href="StricklandFSUTranR.pdf" target="_blank" type="application/pdf">
+                  PDF Transcript
+                </a>
+                <p>
+                  <hr>
             </div>
-            <!-- End Grid -->
+            <div class="w3-container">
+              <h5 class="w3-opacity">
+                <b>
+                  A.A.
+                  <a class="edu" href="https://www.pensacolastate.edu/" target="_blank">
+                    Pensacola State College
+                  </a>
+                </b>
+              </h5>
+
+              <p class="edu">
+                Major:
+                <a class="edu" href="https://pensacolastate.smartcatalogiq.com/en/2015-2016/Catalog/Academic-Programs/Associate-in-Arts-Program/Associate-in-Arts-Programs-of-Study/General-Studies-Liberal-Arts-Associate-in-Arts-GEN-AA" target="_blank">
+                  General Studies (Liberal Arts)
+                </a>
+                <br>
+              </p>
+              <h6 class="w3-text-indigo">
+                <i class="fa fa-calendar fa-fw w3-margin-right">
+                </i>
+                2000 - 2002
+              </h6>
+              <br>
+            </div>
+          </div>
+          <!-- End Left Column -->
         </div>
-        <!-- End Page Container -->
+        <!-- Right Column -->
+        <div class="w3-twothird">
+          <!-- ~~~~~~~~~~~~ A B O U T ~~~~~~~~~~~~ -->
+          <div class="w3-container w3-card w3-white w3-margin-bottom">
+            <a class="anchor" id="about"></a>
+            <h2 class="w3-text-grey w3-padding-16">
+              <i class="fa fa-book  fa-spin fa-fw w3-margin-right w3-xxlarge w3-text-indigo">
+              </i>
+              About
+            </h2>
+            <p class="p2">
+              I was born in Alabama to parents from Georgia and Illinois but raised
+              in Florida from a very young age. After thirteen years in the public school
+              system, I probably ended up falling into the "band nerd" category &mdash; though
+              at the time I would have liked to think I wasn't as nerdy as the others,
+              but hindsight is 20-20. Anyway, I continued that theme into college where
+              I majored in music with my principal instrument being classical guitar.
+            </p>
+            <p class="p2">
+              By graduation time, I was teaching private lessons out of a small independent
+              music store and continued that until I married my college sweetheart and
+              realized I needed something more substantial, so I became a state government
+              worker. This was a path many of us who graduated from Florida State University
+              took due to living in the state capital where the majority of jobs are
+              in government. The Florida Department of Education hired me as an IT specialist
+              on an operations team in the Bureau of Educator Certification. It was my
+              first job in the professional world, and I enjoyed it, but after four years
+              there my wife’s father began a life changing battle with cancer which rendered
+              him partially paralyzed and unable to work.
+            </p>
+            <p class="p2">
+              With my in-laws living over four hundred miles away in South Florida,
+              we decided to relocate there to help support her family. Since I had already
+              been in the state government system, I naturally took another state job
+              which was at the child support office in West Palm Beach. After three years
+              of being there for my in-laws, my wife and I realized we preferred our
+              old life in Tallahassee. I was offered my old job back at DOE, so back
+              to North Florida we went.
+            </p>
+            <p class="p2">
+              It was after the return to Tallahassee that the marriage ended, which
+              left me without much of a reason to stay in Tallahassee. I had been with
+              DOE for a combined total of eight years by this point. I had some local friends, but no immediate family, so it became obvious that a change needed
+              to occur, so that’s how I ended up back in my birth state. My strong familial
+              connections in North Alabama along with the area's burgeoning tech industry
+              made it an obvious place to call home. Since moving to Madison, I have
+              completed a second bachelor’s degree at Athens State University where I spent over three years
+              studying programming, problem analysis,
+              problem-solving, and software engineering.
+            </p>
+          </div>
+          <!-- ~~~~~~~~~~~~ C L A S S R O O M E X P E R I E N C E ~~~~~~~~~~~~ -->
+          <div class="w3-container w3-card w3-white w3-margin-bottom">
+            <a class="anchor" id="cap"></a>
+            <h2 class="w3-text-grey w3-padding-16">
+              <i class="fa fa-cube fa-spin fa-fw w3-margin-right w3-xxlarge w3-text-indigo">
+              </i>
+              Classroom Experience
+            </h2>
+            <p class="p2">
+              For my software engineering capstone project at Athens State in Spring
+              2022, I developed an application for our customer on top of a preexisting
+              back end which was developed by the Fall '21 team. My team was responsible
+              for designing, implementing, and testing the front end requirements given
+              to us by the customer. With diligent communication with the client and
+              my team, we were able to develop a reliable product which pushed, posted,
+              rendered, and updated data between various user views and established connections
+              between the front and back end. The front end aspects that I worked on
+              were written in Vue.js and plain JavaScript. Other aspects of the project
+              included a Docker container environment consisting of NGINX, Django, and
+              Vue servers. Python was used for terminal commands and scripts to manage
+              the back end as well as to define data tables within the Django REST API.
+              Version control was all done through GitHub using terminal commands and
+              the Visual Studio Code integrated source control.
+            </p>
+            <p>
+              Other academic projects included:
+            </p>
+            <ul>
+              <li>
+                Website redesign for local non-profit literacy organization using Wordpress
+              </li>
+              <li>
+                Used PHP, MySQL, HTML, CSS, and JS for web development
+              </li>
+              <li>
+                Designed and developed database using MySQL Workbench and phpMyAdmin
+              </li>
+              <li>
+                Mobile iOS app dev using Xcode and Swift
+              </li>
+              <li>
+                C++ programs and data structures
+              </li>
+            </ul>
+            <br>
+          </div>
+          <!-- ~~~~~~~~~~~~ W O R K ~~~~~~~~~~~~ -->
+          <div class="w3-container w3-card w3-white w3-margin-bottom">
+            <a class="anchor" id="work"></a>
+            <h2 class="w3-text-grey w3-padding-16">
+              <i class="fa fa-suitcase fa-spin fa-fw w3-margin-right w3-xxlarge w3-text-indigo">
+              </i>
+              Work Experience
+            </h2>
+            <div class="w3-container">
+              <h4 class="w3-opacity">
+                <b>
+                  Driver / Pizza Hut
+                </b>
+              </h4>
+              <h6 class="w3-text-indigo">
+                <i class="fa fa-map-marker fa-fw w3-margin-right">
+                </i>
+                Madison, Alabama
+              </h6>
+              <h6 class="w3-text-indigo">
+                <i class="fa fa-calendar fa-fw w3-margin-right">
+                </i>
+                2019 - 2022
+                <!--span class="w3-tag w3-indigo w3-round">Current</span-->
+              </h6>
+              <p class="p2">
+              </p>
+              The restaurant industry turned out to have a balanced symbiotic relationship with the demands
+              of earning my degree at Athens State. The flexibility in scheduling
+              allowed for an ebb and flow as semesters waxed and waned in difficulty.  
+              </p>
+              <hr>
+            </div>
+            <div class="w3-container">
+              <h4 class="w3-opacity">
+                <b>
+                  IT Program Specialist II / Florida Department of Education
+                </b>
+              </h4>
+              <h6 class="w3-text-indigo">
+                <i class="fa fa-map-marker fa-fw w3-margin-right">
+                </i>
+                Tallahassee, Florida
+              </h6>
+              <h6 class="w3-text-indigo">
+                <i class="fa fa-calendar fa-fw w3-margin-right">
+                </i>
+                2014 - 2018
+              </h6>
+              <p class="p2">
+              </p>
+              After three years of absence, I returned to my previous position to find
+              that the department's educator certification technology systems were in
+              the process of being redesigned. Because of this, my responsibilities involved
+              working as a liason to the contracted application developers. It was during
+              this period that I became interested in programming as a career. Working
+              closely with our app dev team I became familiar with Agile methodology
+              and the software development lifecycle as it pertained to my department's
+              project.
+              </p>
+              <ul>
+                <li>
+                  Government side liaison to a contracted app dev team
+                </li>
+                <li>
+                  Developed user stories and testing documentation in Sharepoint
+                </li>
+                <li>
+                  Provided technical assistance to all internal employees and external stakeholders
+                </li>
+                <li>
+                  Managed user accounts, priviliges, and passwords with Active Directory
+                </li>
+                <li>
+                  Participated in extensive project to redesign Florida’s certification
+                  system
+                </li>
+                <li>
+                  Assessed and resolved urgent system and technical issues
+                </li>
+                <li>
+                  Maintained production statistics and system status reports
+                </li>
+                <li>
+                  Used Remedy ticketing system manage helpdesk requests
+                </li>
+                <li>
+                  Worked with contracted application developers to analyze and adopt existing
+                  business processes in the new system
+                </li>
+                <li>
+                  Followed property custodian protocol for inventory addition, deletion,
+                  transfer, and surplus of computers and other state property
+                </li>
+              </ul>
+              <hr>
+            </div>
+            <div class="w3-container">
+              <h4 class="w3-opacity">
+                <b>
+                  Revenue Specialist II / Florida Department of Revenue
+                </b>
+              </h4>
+              <h6 class="w3-text-indigo">
+                <i class="fa fa-map-marker fa-fw w3-margin-right">
+                </i>
+                West Palm Beach, Florida
+              </h6>
+              <h6 class="w3-text-indigo">
+                <i class="fa fa-calendar fa-fw w3-margin-right">
+                </i>
+                2012 - 2014
+              </h6>
+              <p class="p2">
+                At this point, I was a state worker outside the state capital so I was
+                given a small pool of options for employment if I was going to continue
+                my public sector trajectory. Luckily I landed what might end up being the
+                most bizarre job of my career, which was at the Child Support Enforcement
+                office in West Palm Beach. The population diversity of South Florida is
+                unlike anywhere I had ever lived, and the cast of characters I had the
+                pleasure of interviewing (with glass separating us) taught me more about
+                the human condition than anything else up until this point. More often
+                than interviewing clients in an interviewing room, I was seated at my desk,
+                tasked with compiling financial and employment data and creating in house
+                child support orders. These were known as administrative orders as opposed
+                to judicial orders created by the courts.
+              </p>
+              <ul>
+                <li>
+                  Piloted a cost reducing directive to administer DNA testing by state employees
+                  rather than contracting through vendor
+                </li>
+                <li>
+                  Interpreted and processed court orders and other legal documents
+                </li>
+                <li>
+                  Abided by complex state guidelines to establish child support orders using
+                  financial data provided by the client combined with research utilizing
+                  DOR resources
+                </li>
+                <li>
+                  Coordinated and streamlined process to minimize customer wait times and
+                  maximize accuracy of DNA collections process
+                </li>
+                <li>
+                  Utilized a task based CRM software based work environment, similar to
+                  Jira in the tech world
+                </li>
+                <li>
+                  Educated the client regarding the steps to obtain an order
+                </li>
+                <li>
+                  Coordinating genetic testing appointments and lab analysis with contracted
+                  state vendors and legal service providers
+                </li>
+                <li>
+                  Knowledge of state law and policy regarding paternity and child support
+                </li>
+              </ul>
+              <hr>
+            </div>
+            <div class="w3-container">
+              <h4 class="w3-opacity">
+                <b>
+                  IT Program Specialist II / Florida Department of Education
+                </b>
+              </h4>
+              <h6 class="w3-text-indigo">
+                <i class="fa fa-map-marker fa-fw w3-margin-right">
+                </i>
+                Tallahassee, Florida
+              </h6>
+              <h6 class="w3-text-indigo">
+                <i class="fa fa-calendar fa-fw w3-margin-right">
+                </i>
+                2007 - 2011
+              </h6>
+              <p class="p2">
+              </p>
+              My first time working in the "professional world" was in FLDOE's Bureau
+              of Educator Certification. At that time, men in the bureau were required
+              to wear ties, so I think that's what makes me say "professional". On my
+              first day my supervisor gave me the task of troubleshooting an inexpensive
+              HP inkjet printer. After spending hours on hold with HP customer service,
+              we ended up just boxing it up and shipping it back to be replaced. That
+              headache was how I was introduced to the next ten years of being a state
+              employee. But despite the interesting first day, the job did give me invaluable
+              lessons and experience as shown below.
+              </p>
+              <ul>
+                <li>
+                  IT support for internal and external stakeholders
+                </li>
+                <li>
+                  Provided technical assistance to all internal employees and external stakeholders
+                </li>
+                <li>
+                  Assessed and resolved urgent system and technical issues
+                </li>
+                <li>
+                  Maintained production statistics and system status reports
+                </li>
+                <li>
+                  Technical assistance and troubleshooting of all office PCs, equipment
+                  and software utilized by a bureau staff of 60 employees in addition to
+                  managing the BEC technical help e-mail inbox which served all school districts
+                  in the state
+                </li>
+                <li>
+                  Preparing reports on bureau production statistics and technology systems
+                  status
+                </li>
+                <li>
+                  Investigating, analyzing, and making resolution recommendations for BEC
+                  system issues
+                </li>
+                <li>
+                  Maintaining all equipment and supply inventory records including: maintenance
+                  contracts (renewing and evaluating cost effectiveness), office supplies,
+                  and following protocol for property addition, deletion, transfer, and surplus
+                </li>
+                <li>
+                  Discovered thousands of dollars in savings by upgrading outdated scanning
+                  equipment, made recommendation on purchase which eliminated wasteful spending
+                  on maintenance contracts
+                </li>
+              </ul>
+              <hr>
+            </div>
+            <div class="w3-container">
+              <h4 class="w3-opacity">
+                <b>
+                  Instructor / Music Center
+                </b>
+              </h4>
+              <h6 class="w3-text-indigo">
+                <i class="fa fa-map-marker fa-fw w3-margin-right">
+                </i>
+                Tallahassee, Florida
+              </h6>
+              <h6 class="w3-text-indigo">
+                <i class="fa fa-calendar fa-fw w3-margin-right">
+                </i>
+                2005 - 2007
+              </h6>
+              <p class="p2">
+              </p>
+              While still in college, a small independent music store in downtown Tallahassee
+              hired me to teach guitar lessons. On my days not teaching I would open
+              and close the store, work the counter, and assist customers with questions
+              about merchandise.
+              </p>
+              <div class="p2">
+              </div>
+            </div>
+            <br>
+          </div>
+          <!-- End Right Column -->
+        </div>
+        <!-- End Grid -->
+      </div>
+      <!-- End Page Container -->
     </div>
     <footer class="w3-container w3-indigo w3-center w3-margin-top">
-        <br>
-        <a href="https://www.linkedin.com/in/misterchristopherstrickland/" target="_blank">
-            <i class="fa fa-linkedin w3-indigo w3-xxxlarge  w3-hover-opacity">
-            </i>
-        </a>
-        <!--needs space?-->
-        <a href="https://www.github.com/cricklandia" target="_blank">
-            <i class="fa fa-github fa-fw w3-indigo w3-xxxlarge  w3-hover-opacity">
-            </i>
-        </a>
-        <br>
-        <br>
-        <p class="w3-small">
-            Created by Chris Strickland July 2022 using Bootstrap 5 and W3.CSS
-        </p>
-        <!-- <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a> -->
+      <br>
+
+      <a href="https://www.linkedin.com/in/misterchristopherstrickland/" target="_blank">
+        <i class="fa fa-linkedin w3-indigo w3-xxxlarge  w3-hover-opacity">
+        </i>
+      </a>
+      <!--needs space?-->
+      <a href="https://www.github.com/cricklandia" target="_blank">
+        <i class="fa fa-github fa-fw w3-indigo w3-xxxlarge  w3-hover-opacity">
+        </i>
+      </a>
+      <br>
+      <br>
+      <p class="w3-tiny">
+        created by Chris using Bootstrap 5 and W3.CSS
+      </p>
+      <!-- <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a> -->
     </footer>
-    <script>
-        // When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
-        /*link.onclick = function () {
-            navBarCollapse()
-        };
-
-        function navBarCollapse() {
-            if (document.nav.height > 80) {
-                document.getElementById("navbar").style.padding = "30px 10px";
-                document.getElementById("nav").style.fontSize = "25px";
-            } else {
-                return;
-            }
-        }*/
-
-        /* Open when someone clicks on the span element */
-        function openNav() {
-            document.getElementById("myNav").style.width = "100%";
-        }
-
-        /* Close when someone clicks on the "x" symbol inside the overlay */
-        function closeNav() {
-            document.getElementById("myNav").style.width = "0%";
-        } 
-    </script>
-</body>
-
+  </body>
 </html>
