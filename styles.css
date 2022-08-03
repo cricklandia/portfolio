@@ -1,283 +1,425 @@
 /* Place your CSS styles in this file */
 h1 {
-    text-align: center;
-    font-family: "Source Sans Pro", sans-serif;
-    font-weight: normal;
-    font-size: 1.3em !important
-  }
-  
-  html,
-  body,
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    font-family: "Roboto", sans-serif
-  }
-  
-  /* body {
+  text-align: center;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: normal;
+  font-size: 1.3em !important
+}
+
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Roboto", sans-serif
+}
+
+/* body {
       background-image:url('orionneb.jpg');
       background-repeat:inherit;
       background-size:auto;
       background-attachment:scroll;
   } */
-  
-  .p2 {
-    text-indent: 30px;
-  }
-  
-  .edu {
-    color: #000;
-  }
-  
-  a:link {
-    text-emphasis-color: black;
-  }
-  
-  a:hover {
-    color: #3f51b5;
-  }
-  
-  .bg-primary2 {
-    background-color: #333333;
-  }
-  
-  .button {
-    position: relative;
-    background-color: #3f51b5;
-    border: none;
-    font-size: 16px;
-    color: #FFFFFF;
-    padding: 1px;
-    width: 200px;
-    text-align: center;
-    transition-duration: 0.6s;
-    text-decoration: none;
-    overflow: hidden;
-    cursor: pointer;
-    border-radius: 12px;
-  }
-  
-  
-  
-  .avatar {
-    vertical-align: middle;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-  }
-  
-  .navul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0px;
-    overflow: hidden;
-    background-color: #000;
-  }
-  
-  .navli {
-    float: left;
-    display: inline;
-  }
-  
-  .navli a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  
-  .navli a:hover {
-    background-color: #333333;
-    color: white;
-  }
-  
-  .topnav {
-    overflow: auto;
-    background-color: #000;
-  
-  
-  
-  }
-  
-  .topnav a {
-    float: left;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-    width: 100px;
-  }
-  
-  .topnav a:hover {
-    background-color: #3f51b5;
-    color: white;
-  
-  
-  }
-  
-  .topnav a:active {
-    background-color: #000;
-    color: #fff;
-  
-  
-  
-  }
-  
-  .topnav-right {
-    float: right !important;
-    padding: 14px 16px;
-  
-  
-  }
-  
-  .navbar-toggler {
-    position: bottom !important;
-    height: 50px;
-    border: none;
-    font-size: 16px;
-  
-  
-    text-align: center;
-    transition-duration: 0.6s;
-    text-decoration: none;
-  
-    cursor: pointer;
-    border-radius: 16px;
-  }
-  
-  .vert-line-spacer {
-  
-  
-    border-style: solid;
-    border-width: 1px;
-  
-    border-left: #000;
-    border-bottom: #000;
-    border-top: #000;
-    border-right-color: #333;
-  
-  }
-  
-  .fa-spin {
-    animation-duration: 17s !important;
-  
-    animation-delay: 7s !important;
-  }
-  
-  .w3-animate-fading {
-    animation-duration: 30s !important;
-  
-    animation-delay: 264 !important;
-  }
-  
-  .progress-bar-animated {
-    animation-duration: 2s !important;
-  }
-  
-  /* The Overlay (background) */
-  .overlay {
-    /* Height & width depends on how you want to reveal the overlay (see JS below) */
-    height: 0%;
-    width: 100%;
-    position: fixed;
-    /* Stay in place */
-    z-index: 1;
-    /* Sit on top */
-    left: 0;
-    top: 0;
-    background-color: rgb(0, 0, 0);
-    /* Black fallback color */
-    background-color: rgba(0, 0, 0, 0.9);
-    /* Black w/opacity */
-    overflow-x: hidden;
-    /* Disable horizontal scroll */
-    transition: 0.5s;
-    /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
-  }
-  
-  /* Position the content inside the overlay */
-  .overlay-content {
-    position: relative;
-    top: 25%;
-    /* 25% from the top */
-    width: 100%;
-    /* 100% width */
-    text-align: center;
-    /* Centered text/links */
-    margin-top: 30px;
-    /* 30px top margin to avoid conflict with the close button on smaller screens */
-  }
-  
-  /* The navigation links inside the overlay */
+
+.p2 {
+  text-indent: 30px;
+}
+
+.edu {
+  color: #000;
+}
+
+a:link {
+  text-emphasis-color: black;
+}
+
+a:hover {
+  color: #3f51b5;
+}
+
+.bg-primary2 {
+  background-color: #23282d;
+}
+
+.button {
+  position: relative;
+  background-color: #3f51b5;
+  border: none;
+  font-size: 16px;
+  color: #FFFFFF;
+  padding: 1px;
+  width: 200px;
+  text-align: center;
+  transition-duration: 0.6s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 12px;
+}
+
+
+
+.avatar {
+  vertical-align: middle;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.navul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0px;
+  overflow: hidden;
+  background-color: #000;
+}
+
+.navli {
+  float: left;
+  display: inline;
+}
+
+.navli a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navli a:hover {
+  background-color: #333333;
+  color: white;
+}
+
+.topnav {
+  overflow: auto;
+  background-color: #000;
+
+
+
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  width: 100px;
+}
+
+.topnav a:hover {
+  background-color: #3f51b5;
+  color: white;
+
+
+}
+
+.topnav a:active {
+  background-color: #000;
+  color: #fff;
+
+
+
+}
+
+.topnav-right {
+  float: right !important;
+  padding: 14px 16px;
+
+
+}
+
+.navbar-toggler {
+  position: bottom !important;
+  height: 50px;
+  border: none;
+  font-size: 16px;
+
+
+  text-align: center;
+  transition-duration: 0.6s;
+  text-decoration: none;
+
+  cursor: pointer;
+  border-radius: 16px;
+}
+
+.vert-line-spacer {
+
+
+  border-style: solid;
+  border-width: 1px;
+
+  border-left: #000;
+  border-bottom: #000;
+  border-top: #000;
+  border-right-color: #333;
+
+}
+
+.fa-spin {
+  animation-duration: 17s !important;
+
+  animation-delay: 7s !important;
+}
+
+.w3-animate-fading {
+  animation-duration: 30s !important;
+
+  animation-delay: 264 !important;
+}
+
+.progress-bar-animated {
+  animation-duration: 2s !important;
+}
+
+/* The Overlay (background) */
+.overlay {
+  /* Height & width depends on how you want to reveal the overlay (see JS below) */
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  background-color: rgb(0, 0, 0);
+  /* Black fallback color */
+  background-color: rgba(0, 0, 0, 0.9);
+  /* Black w/opacity */
+  overflow-x: hidden;
+  /* Disable horizontal scroll */
+  transition: 0.5s;
+  /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+
+/* Position the content inside the overlay */
+.overlay-content {
+  position: relative;
+  top: 25%;
+  /* 25% from the top */
+  width: 100%;
+  /* 100% width */
+  text-align: center;
+  /* Centered text/links */
+  margin-top: 30px;
+  /* 30px top margin to avoid conflict with the close button on smaller screens */
+}
+
+/* The navigation links inside the overlay */
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  /* Display block instead of inline */
+  transition: 0.3s;
+  /* Transition effects on hover (color) */
+}
+
+/* When you mouse over the navigation links, change their color */
+.overlay a:hover,
+.overlay a:focus {
+  color: #f1f1f1;
+}
+
+/* Position the close button (top right corner) */
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+@media screen and (max-height: 450px) {
   .overlay a {
-    padding: 8px;
-    text-decoration: none;
-    font-size: 36px;
-    color: #818181;
-    display: block;
-    /* Display block instead of inline */
-    transition: 0.3s;
-    /* Transition effects on hover (color) */
+    font-size: 20px
   }
-  
-  /* When you mouse over the navigation links, change their color */
-  .overlay a:hover,
-  .overlay a:focus {
-    color: #f1f1f1;
-  }
-  
-  /* Position the close button (top right corner) */
+
   .overlay .closebtn {
-    position: absolute;
-    top: 20px;
-    right: 45px;
-    font-size: 60px;
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
   }
-  
-  /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
-  @media screen and (max-height: 450px) {
-    .overlay a {
-      font-size: 20px
-    }
-  
-    .overlay .closebtn {
-      font-size: 40px;
-      top: 15px;
-      right: 35px;
-    }
-  }
-  
-  /* this overrides bootstrapp css so overlay can cover nav*/
-  .sticky-top {
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-    z-index: 1 !important
-  }
-  
-  .anchor {
-    display: block;
-    padding-top: 50px;
-    margin-top: -50px;
+}
+
+/* this overrides bootstrapp css so overlay can cover nav*/
+.sticky-top {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1 !important
+}
+
+.anchor {
+  display: block;
+  padding-top: 50px;
+  margin-top: -50px;
+}
+
+.headerAnime {
+
+  animation-name: example;
+  animation-duration: 4s;
+
+}
+
+@keyframes example {
+
+  0% {
+    background-color: #23282d;
   }
 
-  .headerAnime {
+  40% {
+    background-color: #23282d;
+  }
 
-    animation-name: example;
-    animation-duration: 5s;
+  75% {
+    background-color: #3f51b5;
   }
-  
-  @keyframes example {
-  
-    0% {background-color:#333333;}
-    40% {background-color:#333333;}
-    75% {background-color:#3f51b5;}
-    100% {background-color: #333333;}
-    
-    
+
+  100% {
+    background-color: #23282d;
   }
+
+
+}
+
+.w3-dark-grey-me {
+
+  color: #3f51b5 !important;
+  background-color: #cccccc !important
+}
+
+.w3-animate-zoom {
+  animation: animatezoom2 3s !important
+}
+
+@keyframes animatezoom2 {
+
+  from {
+    transform: scale(0)
+  }
+
+  to {
+    transform: scale(1)
+  }
+}
+
+
+
+/* cool CSS animation */
+/* 
+.loader {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Nunito', sans-serif;
+  font-size: 5em;
+  color: transparent;
+}
+
+.loader span {
+  text-shadow:
+    0 0 2px rgba(204, 208, 212,0.9),
+    0 15px 25px rgba(0, 0, 0, 0.3),
+    0 -2px 3px rgba(0, 0, 0, 0.1),
+    0 -5px 10px rgba(255, 255, 255, 0.5),
+    0 5px 10px rgba(0, 0, 0, 0.3),
+    0 3px 4px rgba(255, 255, 255, 0.2),
+    0 0 20px rgba(255, 255, 255, 0.45);
+  
+-webkit-animation: loading 1.2s ease-in-out infinite alternate;
+-moz-animation: loading 1.2s ease-in-out infinite alternate;
+-ms-animation: loading 1.2s ease-in-out infinite alternate;
+animation: loading 1.2s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes loading {
+  to { text-shadow:
+    0 0 2px rgba(204, 208, 212,0.2),
+    0 0 3px rgba(0, 0, 0, 0.02),
+    0 0 0 rgba(0, 0, 0, 0),
+    0 0 0 rgba(255, 255, 255, 0),
+    0 0 0 rgba(0, 0, 0, 0),
+    0 0 0 rgba(255, 255, 255, 0),
+    0 0 0 rgba(255, 255, 255, 0);}
+}
+
+@-moz-keyframes loading {
+  to { text-shadow:
+    0 0 2px rgba(204, 208, 212,0.2),
+    0 0 3px rgba(0, 0, 0, 0.02),
+    0 0 0 rgba(0, 0, 0, 0),
+    0 0 0 rgba(255, 255, 255, 0),
+    0 0 0 rgba(0, 0, 0, 0),
+    0 0 0 rgba(255, 255, 255, 0),
+    0 0 0 rgba(255, 255, 255, 0);}
+}
+
+@-ms-keyframes loading {
+  to { text-shadow:
+    0 0 2px rgba(204, 208, 212,0.2),
+    0 0 3px rgba(0, 0, 0, 0.02),
+    0 0 0 rgba(0, 0, 0, 0),
+    0 0 0 rgba(255, 255, 255, 0),
+    0 0 0 rgba(0, 0, 0, 0),
+    0 0 0 rgba(255, 255, 255, 0),
+    0 0 0 rgba(255, 255, 255, 0);}
+}
+
+@keyframes loading {
+  to { text-shadow:
+    0 0 2px rgba(204, 208, 212,0.2),
+    0 0 3px rgba(0, 0, 0, 0.02),
+    0 0 0 rgba(0, 0, 0, 0),
+    0 0 0 rgba(255, 255, 255, 0),
+    0 0 0 rgba(0, 0, 0, 0),
+    0 0 0 rgba(255, 255, 255, 0),
+    0 0 0 rgba(255, 255, 255, 0);}
+}
+
+.loader span:nth-child(2) {
+-webkit-animation-delay:0.2s;
+   -moz-animation-delay:0.2s;
+    -ms-animation-delay:0.2s;
+        animation-delay:0.2s;
+}
+.loader span:nth-child(3) {
+-webkit-animation-delay:0.4s;
+   -moz-animation-delay:0.4s;
+    -ms-animation-delay:0.4s;
+        animation-delay:0.4s;
+}
+.loader span:nth-child(4) {
+-webkit-animation-delay:0.6s;
+   -moz-animation-delay:0.6s;
+    -ms-animation-delay:0.6s;
+        animation-delay:0.6s;
+}
+.loader span:nth-child(5) {
+-webkit-animation-delay:0.8s;
+   -moz-animation-delay:0.8s;
+    -ms-animation-delay:0.8s;
+        animation-delay:0.8s;
+}
+.loader span:nth-child(6) {
+-webkit-animation-delay:1s;
+   -moz-animation-delay:1s;
+    -ms-animation-delay:1s;
+        animation-delay:1s;
+}
+.loader span:nth-child(7) {
+-webkit-animation-delay:1.2s;
+   -moz-animation-delay:1.2s;
+    -ms-animation-delay:1.2s;
+        animation-delay:1.2s;
+} */
