@@ -267,10 +267,8 @@ a:hover {
 }
 
 .headerAnime {
-
   animation-name: example;
-  animation-duration: 4s;
-
+  animation-duration: 5s;
 }
 
 @keyframes example {
@@ -283,38 +281,50 @@ a:hover {
     background-color: #23282d;
   }
 
-  75% {
+  100% {
     background-color: #3f51b5;
   }
 
-  100% {
+  /* 100% {
     background-color: #23282d;
-  }
-
-
+  } */
 }
 
 .w3-dark-grey-me {
-
   color: #3f51b5 !important;
   background-color: #cccccc !important
 }
 
-.w3-animate-zoom {
-  animation: animatezoom2 3s !important
+.w3-name-zoom { 
+
+  animation-name: animatezoom1;
+  animation-duration: 5s;
 }
 
-@keyframes animatezoom2 {
+@keyframes animatezoom1 {
 
   from {
     transform: scale(0)
+  } 
+  to {
+    transform: scale(2)
+  }
+}
+
+/* @keyframes animatezoom2 {
+
+  from {
+    transform: scale(2)
   }
 
   to {
     transform: scale(1)
   }
-}
+} */
 
+.w3-hover-no-grayscale:hover {
+  filter: grayscale(0%)
+}
 
 
 /* cool CSS animation */
