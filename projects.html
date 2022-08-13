@@ -24,7 +24,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<body class="w3-dark-grey-me">
+<body class="w3-dark-grey-me" onload="onloadDivs()">
 
     <div class="headerAnime  p-5 bg-primary2 text-white text-center">
         <h1 class="w3-name-zoom">
@@ -149,7 +149,7 @@
               </i> Projects
                 </h2>
                 <p>
-                    Below is a summary of various projects completed at Athens State. There are others that are independent projects.
+                    Below is a summary of various software and web design projects. Some were completed for college courses, some independently.
                 </p>
                 <br>
                 <div class="w3-container">
@@ -174,7 +174,7 @@
 
                     <div class="w3-content w3-display-container ">
                         
-                      <img class="mySlides  w3-image " src="cap1.jpg">
+                      <img class="mySlides  w3-image" src="cap1.jpg">
                       <img class="mySlides  w3-image" src="cap2.jpg">
                       <img class="mySlides  w3-image" src="cap3.jpg">
                       <img class="mySlides  w3-image" src="cap4.jpg">
@@ -187,8 +187,8 @@
                       <img class="mySlides  w3-image" src="cap11.jpg">
                       <img class="mySlides  w3-image" src="cap12.jpg">
                     
-                      <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
-                      <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+                      <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1, 'mySlides')">&#10094;</button>
+                      <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1, 'mySlides')">&#10095;</button>
                     </div>
 
                     
@@ -243,6 +243,9 @@
 
                     <hr>
                 </div>
+
+
+                <!-- Roldoku -->
                 <div class="w3-container">
                     <h4 class="w3-opacity">
                         <b>
@@ -255,14 +258,31 @@
                     </h6>
                     <h6 class="w3-text-indigo">
                         <i class="fa fa-calendar fa-fw w3-margin-right">
-                </i> 2021 (project for Human-Computer Interaction)
+                </i> Fall 2021
                     </h6>
                     <p>
-                        A two-in-one game which includes Sudoku and Hi-Lo Dice
+                        A two-in-one game which includes Sudoku and Hi-Lo Dice. As project for Human-Computer Interaction, I started the storyboard by making a prototype in Adobe XD which I was using in another course then continued implementing the assignment using HTML, CSS, and Javascript.
                     </p>
-             
+                    <div class="w3-content w3-display-container ">
+                        
+                        <img class="rolSlides  w3-image " src="roldoku1.jpg">
+                        <img class="rolSlides  w3-image" src="roldoku2.jpg">
+                        <img class="rolSlides  w3-image" src="roldoku3.jpg">
+                        <img class="rolSlides  w3-image" src="roldoku4.jpg">
+                        <img class="rolSlides  w3-image" src="roldoku5.jpg">
+                        <img class="rolSlides  w3-image" src="roldoku6.jpg">
+                        <img class="rolSlides  w3-image" src="roldoku7.jpg">
+                        <img class="rolSlides  w3-image" src="roldoku8.jpg">
+                        <img class="rolSlides  w3-image" src="roldoku9.jpg">
+                        <img class="rolSlides  w3-image" src="roldoku10.jpg">
+                        <img class="rolSlides  w3-image" src="roldoku11.jpg">
+                        
+                      
+                        <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1, 'rolSlides')">&#10094;</button>
+                        <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1, 'rolSlides')">&#10095;</button>
+                      </div>
                     
-
+                        <br>
                     <hr>
                 </div>
                 <div class="w3-container">
