@@ -18,6 +18,10 @@ html, body, h1, h2, h3, h4, h5, h6 {
 .p2 {
   text-indent: 30px;
 }
+.p3{
+  
+  text-align: center;
+}
 .edu {
   color: #000;
 }
@@ -252,6 +256,11 @@ a:hover {
 .w3-hover-no-grayscale:hover {
   filter: grayscale(0%) 
 }
+
+.mySlides {display:none}
+
+
+
 /* cool CSS animation */
 /* .loader {
   text-align: center;
