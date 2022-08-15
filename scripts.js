@@ -12,7 +12,7 @@ function openNav() {
   https://www.w3schools.com/w3css/w3css_slideshow.asp
   */
 //  declare all project slideshows
-  let proj = new Array('mySlides', 'rolSlides');
+  let proj = ['mySlides', 'rolSlides'];
   var slideIndex = 1;
   //this var is the proj class sent by clicking arrows on projects.html
   var fromArrow;
