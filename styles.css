@@ -257,9 +257,11 @@ a:hover {
   filter: grayscale(0%) 
 }
 
-.mySlides {display:none}
+.capSlides {display:none}
 
 .rolSlides {display:none}
+
+.riskSlides {display:none}
 
 /* cool CSS animation */
 /* .loader {
