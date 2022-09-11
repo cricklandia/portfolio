@@ -7,26 +7,26 @@ canvas.height = 576
 
 c.fillRect(0, 0, canvas.width, canvas.height)
 
-const gravity = 1.25
+const gravity = 1.25;
 
 const background = new Sprite({
   position: {
     x: 0,
-    y: 0
+    y: -70
   },
-  imageSrc: './img/background.png',
-  scale: 0,
+  imageSrc: './img/backg.png',
+  scale: 4.5,
   rotate: 0
 
 })
 
 const shop = new Sprite({
   position: {
-    x: 400,
-    y: 128
+    x: 477,
+    y: 77
   },
-  imageSrc: './img/shop.png',
-  scale: 0.4,
+  imageSrc: './img/fficon.png',
+  scale: 0.14,
   framesMax: 1
 })
 //tiamat on left
@@ -106,34 +106,34 @@ const enemy = new Fighter({
     x: 0,
     y: 0
   },
-  imageSrc: './img/blackmage/Idle.png',
+  imageSrc: './img/blackmage/IdleOLD4.png',//what is this?
   framesMax: 2,
-  scale: 0.45,
+  scale: 0.18,
   offset: {
     x: 215,
     y: -100
   },
   sprites: {
     idle: {
-      imageSrc: './img/blackmage/Idle.png',
+      imageSrc: './img/blackmage/IdleOLD4.png',
       framesMax: 1
     },
     run: {
-      imageSrc: './img/blackmage/Run.png',
-      framesMax: 2
+      imageSrc: './img/blackmage/IdleOLD4.png',
+      framesMax: 1
     },
     jump: {
-      imageSrc: './img/blackmage/Jump.png',
+      imageSrc: './img/blackmage/IdleOLD4.png',
       framesMax: 1
     },
     fall: {
-      imageSrc: './img/blackmage/Fall.png',
+      imageSrc: './img/blackmage/IdleOLD4.png',
       framesMax: 1
     },
     attack1: {
-      imageSrc: './img/blackmage/Attack1.png',
+      imageSrc: './img/blackmage/IdleOLD4.png',
       
-      framesMax: 4,
+      framesMax: 1,
       
       position: {
         x: 0,

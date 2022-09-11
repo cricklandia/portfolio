@@ -3368,19 +3368,19 @@ if (!
             }
             return m
           },
-          // getJSON: function(t, g, e) {
-          //   console.log("getJSON");
-          //   console.log(y.get(t, g, e, "json"));
-          //   return y.get(t, g, e, "json")
-          // },
-
           getJSON: function(t, g, e) {
             console.log("getJSON");
-            // console.log(y.get(t, g, e, "json"));
-            return y.get(t, "json")
-            console.log(y, "json");
-            
+            console.log(y.get(t, g, e, "json"));
+            return y.get(t, g, e, "json")
           },
+
+          // getJSON: function(t, g, e) {
+          //   console.log("getJSON");
+          //   // console.log(y.get(t, g, e, "json"));
+          //   return y.get(t, "json")
+          //   console.log(y, "json");
+            
+          // },
           getScript: function(t, g) {
             return y.get(t, void 0, g, "script")
           }
